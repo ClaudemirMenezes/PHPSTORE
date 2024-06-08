@@ -1,0 +1,22 @@
+{
+    "name": "claudemir/phpstore",
+    "description": "Loja Online em PHP",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Claudemir\\Phpstore\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Claudemir Menezes",
+            "email": "claudemir0088@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload-dev": {
+        "psr-4": {
+            "core\\" : "core/"
+        }
+    }
+}

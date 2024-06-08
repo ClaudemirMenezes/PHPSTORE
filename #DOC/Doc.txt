@@ -1,0 +1,18 @@
+Loja Web com PHP PURO
+
+Webstore simples (frontend, loja , carrinho, clientes, backoffice,...)
+
+Tecnologias(Blib):
+PHP8, MySQL, HTML, CSS, Javascript, Bootstrap5, Axios, PHPMailer, mPDF..
+
+Configurações basicas no VScode para facilitar o processo do projeto:
+    1.Auto Save - onFocusChange
+    2.Extenções - Material Icon - PHP Intelephense
+    3.Validadar o Path PHP no Xampp c:/xampp/php/php.exe | settings.json c:\\xampp\\php\\php.exe
+
+Banco de dados
+    instalação do HeiidiSQL
+    criar uma sessão - localhost
+
+Composer
+    instalar o Composer
