@@ -8,23 +8,44 @@ class Main{
     
     public function index(){
 
-       
-
-        $dados = [
-            'titulo' => 'Este é o titulo',
-            'clientes' => ['Claudemir', 'Isaque', 'Beatriz']
-        ];
-
         Store:: Layout([
             'layouts/html_header',
-            'pagina_inicial',
+            'layouts/header',
+            'inicio',
+            'layouts/footer',
             'layouts/html_footer',
 
-        ],$dados) ;
+        ]);
     }
 
     public function loja(){
-        echo 'LOJA!!!';
+        
+        // apresenta a página da loja
+        Store:: Layout([
+            'layouts/html_header',
+            'layouts/header',
+            'loja',
+            'layouts/footer',
+            'layouts/html_footer',
+
+        ]);
+
+        
+    }
+
+    public function carrinho(){
+        
+        // apresenta a página da loja
+        Store:: Layout([
+            'layouts/html_header',
+            'layouts/header',
+            'carrinho',
+            'layouts/footer',
+            'layouts/html_footer',
+
+        ]);
+
+        
     }
 }
     

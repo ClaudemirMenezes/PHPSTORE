@@ -6,6 +6,7 @@ use Exception;
 
 class Store {
 /*  */
+
     public static function Layout($estruturas, $dados = null){
         
         // verificar se estruturas é um array
@@ -22,5 +23,10 @@ class Store {
         foreach($estruturas as $estrutura){
             include("../core/views/$estrutura.php");
         }
+    }
+
+    public static function clienteLogado(){
+        // verifica se exixte um cliente logado
+        return isset($_SESSION['cliente']);
     }
 }
