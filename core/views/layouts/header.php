@@ -1,7 +1,8 @@
 <?php 
 
+
 use core\classes\Store;
-//$_SESSION['cliente'] = 1; // teste se a cliente logado na pagina.
+
 ?>
 
 <div class="container-fluid navegacao">
@@ -13,24 +14,20 @@ use core\classes\Store;
         </div>
         <div class="col-6 text-end p-3">
 
-            <a href="?a=inicio">Inicio</a>
-            <a href="?a=loja">Loja</a>
+            <a href="?a=inicio" class="nav-item">Inicio</a>
+            <a href="?a=loja" class="nav-item">Loja</a>
 
             <!-- verificar se existe cliente na sesssao-->
             <?php if(Store::clienteLogado()):?>
                 
-                <a href="">Entrar</a>
-                <a href="">Logout</a>
-
+                <a href="?a=entrar" class="nav-item">Entrar</a>
+                <a href="?a=logout" class="nav-item">Logout</a>
                 <!-- Logout  -->
                 <!-- Entra na minha conta -->
+              <?php else:?>
 
-            <?php else:?>
-
-                <a href="">Login</a>
-                <a href="">criar conta</a>
-
-
+                <a href="?a=login" class="nav-item">Login</a>
+                <a href="?a=novo_cliente" class="nav-item">criar conta</a>
                 <!-- Login -->
                 <!-- Criar conta -->
             <?php endif;?>
@@ -38,7 +35,7 @@ use core\classes\Store;
 
             <a href="?a=carrinho"><i class="fa-solid fa-cart-shopping"></i></a>
 
-            <span class="badge bg-warning"></span>
+            <span class="badge bg-warning">10</span>
         </div>
     </div>
 </div>

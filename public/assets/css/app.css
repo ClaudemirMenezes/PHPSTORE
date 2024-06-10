@@ -1,10 +1,26 @@
 
 .navegacao{
-    background-color: rgb(134, 134, 240) ;
+    background-color: #166584 ;
     color: black;
 }
 
 .rodape {
-    background-color: rgb(125, 125, 231) ;
+    background-color: #1d5267 ;
     color: white;
+}
+
+.nav-item{
+    text-decoration: none;
+    color: white;
+    margin: 0px 10px;
+}
+
+.nav-item :hover{
+    text-decoration: underline;
+    color: white;
+    margin: 0px 5px;
+}
+
+.form_nc {
+    background-color: aquamarine;
 }

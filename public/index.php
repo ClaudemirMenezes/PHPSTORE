@@ -3,7 +3,6 @@
 // abrir a sessão
 session_start();
 
-
 //carregar classes
 require_once('../vendor/autoload.php');
 

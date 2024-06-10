@@ -16,3 +16,8 @@ Banco de dados
 
 Composer
     instalar o Composer
+
+Estrutura
+    separar os links 
+    base de dados tabela clientes 
+    criar utilizador com validação de email  
